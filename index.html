@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="page-title">Portfólio de Henrique de Andrade Reynaud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="description"
+        content="Portfólio de Henrique de Andrade Reynaud, estudante FullStack e desenvolvedor web em formação.">
+    <meta name="keywords" content="portfólio, desenvolvedor web, fullstack, Henrique de Andrade Reynaud">
+    <meta property="og:title" content="Portfólio de Henrique de Andrade Reynaud">
+    <meta property="og:description"
+        content="Conheça os projetos e habilidades de Henrique de Andrade Reynaud, estudante FullStack e desenvolvedor web em formação.">
+    <meta property="og:image" content="https://seusite.com/imgs/henrique.jpg">
+    <meta property="og:url" content="https://seusite.com">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="#" data-i18n="portfolio">Meu Portfólio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="about">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projetos" data-i18n="projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacao" data-i18n="education">Educação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline" data-i18n="timeline">Minha Jornada</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html" data-i18n="courses">Cursos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato" data-i18n="contact">Contato</a></li>
                 </ul>
                 <select id="language-selector" class="form-select" style="width: auto;">
@@ -32,17 +44,22 @@
         </div>
     </nav>
 
-    <header>
+    <header class="bg-primary text-white text-center py-5" role="banner">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
-                    <img src="imgs/henrique.jpg" alt="Minha Foto" class="img-fluid rounded-circle img-profile" style="max-width: 250px;">
+
+                    <img src="img/henrique.jpg" alt="Minha Foto" class="img-fluid rounded-circle img-profile"
+                        style="max-width: 250px;" loading="lazy">
+
                 </div>
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold" data-i18n="name">Henrique de Andrade Reynaud</h1>
-                    <p class="lead" data-i18n="role">Estudante FullStack | Desenvolvedor Web em Formação</p>
+                    <h1 class="display-4 fade-in" data-i18n="name">Henrique de Andrade Reynaud</h1>
+                    <p class="lead fade-in delay-1" data-i18n="role">Estudante FullStack | Desenvolvedor Web em Formação
+                    </p>
                     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
-                        <a href="#" class="btn btn-light" data-i18n="download-cv">
+                        <a href="assets/cv/henrique_cv.pdf" class="btn btn-light me-2" data-i18n="download-cv"
+                            target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-download me-2"></i>Download CV
                         </a>
                         <a href="#contato" class="btn btn-outline-light" data-i18n="contact-me">
@@ -50,7 +67,8 @@
                         </a>
                     </div>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/henrique-de-andrade-reynaud-81b615301/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/henrique-de-andrade-reynaud-81b615301/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/riqueandrade" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
@@ -58,10 +76,27 @@
         </div>
     </header>
 
-    <main class="container my-5">
+    <main class="container my-5" role="main">
         <section id="sobre">
             <h2 class="text-center mb-4" data-i18n="about">Sobre Mim</h2>
-            <p class="lead text-center" data-i18n="about-description">Sou um estudante apaixonado por desenvolvimento FullStack, buscando constantemente aprender e aprimorar minhas habilidades em diversas tecnologias web. Estou sempre em busca de novos desafios e oportunidades para crescer como desenvolvedor.</p>
+            <p class="lead text-center">
+                <span data-i18n="about-description-part1">Olá! Sou Henrique de Andrade Reynaud, um estudante de </span>
+                <span id="idade"></span>
+                <span data-i18n="about-description-part2"> anos apaixonado por desenvolvimento FullStack. Atualmente,
+                    estou cursando Desenvolvimento de Sistemas no SESI, onde estou adquirindo habilidades em várias
+                    tecnologias web. Meu objetivo é me tornar um desenvolvedor versátil, capaz de criar soluções
+                    inovadoras tanto no front-end quanto no back-end.</span>
+            </p>
+            <p class="lead text-center" data-i18n="about-skills">
+                Minhas principais áreas de interesse incluem HTML, CSS, JavaScript, Node.js, e bancos de dados como
+                MySQL. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades existentes. Além
+                do desenvolvimento web, tenho interesse em inteligência artificial e desenvolvimento de jogos.
+            </p>
+            <p class="lead text-center" data-i18n="about-goals">
+                Meu objetivo é contribuir para projetos desafiadores e inovadores, aplicando minha criatividade e
+                habilidades técnicas para resolver problemas complexos. Estou ansioso para colaborar com outros
+                desenvolvedores e continuar crescendo na minha jornada como programador.
+            </p>
         </section>
 
         <section id="habilidades" class="mt-5">
@@ -113,26 +148,6 @@
             </div>
         </section>
 
-        <section id="contato" class="mt-5">
-            <h2 class="text-center mb-4" data-i18n="contact">Contato</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" data-i18n-placeholder="your-name" placeholder="Seu Nome">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" data-i18n-placeholder="your-email" placeholder="Seu Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" data-i18n-placeholder="your-message" placeholder="Sua Mensagem"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-i18n="send-message">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
         <section id="educacao" class="mt-5">
             <h2 class="text-center mb-4" data-i18n="education">Educação</h2>
             <div class="row justify-content-center">
@@ -148,21 +163,73 @@
                 </div>
             </div>
         </section>
+
+        <section id="timeline" class="mt-5">
+            <h2 class="text-center mb-4" data-i18n="timeline">Minha Jornada</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2023</h3>
+                        <p data-i18n="timeline-2023">Início do curso de Desenvolvimento de Sistemas no SESI</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <p data-i18n="timeline-2021">Primeiro contato com programação</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2012</h3>
+                        <p data-i18n="timeline-2012">Início da jornada em TI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="mt-5">
+            <h2 class="text-center mb-4" data-i18n="contact">Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" data-i18n-placeholder="your-name"
+                                placeholder="Seu Nome">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" data-i18n-placeholder="your-email"
+                                placeholder="Seu Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" data-i18n-placeholder="your-message"
+                                placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="send-message">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-light text-center py-3">
-        <div class="container">
-            <p>&copy; 2023 Henrique de Andrade Reynaud. <span data-i18n="rights-reserved">Todos os direitos reservados</span>.</p>
-            <div class="mt-3">
-                <a href="https://www.linkedin.com/in/henrique-de-andrade-reynaud-81b615301/" class="text-dark me-3" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/riqueandrade" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
+    <button id="back-to-top" class="btn btn-primary" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Verifique se estes scripts estão presentes e na ordem correta -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Seu script personalizado deve vir depois -->
     <script src="script.js"></script>
-    <script src="i18n.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/age.js"></script>
+    <script src="js/backToTop.js"></script>
 </body>
 
 </html>

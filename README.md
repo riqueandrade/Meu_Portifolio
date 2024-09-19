@@ -1,37 +1,42 @@
-# Portfólio de Henrique de Andrade Reynaud
+# Meu Portfólio Pessoal
 
-Este é o repositório do meu portfólio pessoal, onde apresento minhas habilidades, projetos e informações de contato.
+Este é o repositório do meu portfólio pessoal, onde apresento minhas habilidades, projetos e experiências profissionais.
 
-## Visão Geral
+## Conteúdo
 
-Este portfólio foi desenvolvido usando HTML, CSS, JavaScript e Bootstrap. Ele apresenta:
+O site inclui:
 
-- Uma seção "Sobre Mim"
-- Minhas habilidades técnicas
-- Projetos realizados
+- Informações sobre mim
+- Meu currículo (disponível para download)
+- Projetos que desenvolvi
+- Habilidades técnicas
 - Informações de contato
-- Suporte para múltiplos idiomas (Português, Inglês e Espanhol)
 
 ## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
-- Font Awesome (para ícones)
+- Bootstrap (para responsividade e componentes)
+- i18n.js (para internacionalização)
 
-## Instalação e Uso
+## Arquivos Principais
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/riqueandrade/portfolio.git
-   ```
+- `index.html`: Estrutura principal do site
+- `script.js`: Funcionalidades JavaScript personalizadas
+- `i18n.js`: Configurações de internacionalização
+- `age.js`: Cálculo dinâmico de idade
+- `assets/cv/CURRICULO HENRIQUE.pdf`: Meu currículo em PDF
 
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd portfolio
-   ```
+## Como Executar
 
-3. Abra o arquivo `index.html` em seu navegador preferido.
+1. Clone este repositório
+2. Abra o arquivo `index.html` em seu navegador
 
-Alternativamente, você pode usar um servidor local para executar o site. Por exemplo, com Python:
+## Contato
+
+[Adicione aqui suas informações de contato]
+
+## Licença
+
+[Adicione aqui informações sobre a licença, se aplicável]
