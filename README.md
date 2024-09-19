@@ -26,7 +26,7 @@ O site inclui:
 - `script.js`: Funcionalidades JavaScript personalizadas
 - `i18n.js`: Configurações de internacionalização
 - `age.js`: Cálculo dinâmico de idade
-- `assets/cv/CURRICULO HENRIQUE.pdf`: Meu currículo em PDF
+- `assets/cv/henrique_cv.pdf`: Meu currículo em PDF
 
 ## Como Executar
 
@@ -35,8 +35,9 @@ O site inclui:
 
 ## Contato
 
-[Adicione aqui suas informações de contato]
+Email: henriquereynaud7@gmail.com
+Telefone: (47) 98823-1069
 
 ## Licença
 
-[Adicione aqui informações sobre a licença, se aplicável]
+Este projeto está licenciado sob MIT.
